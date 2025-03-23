@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+<ul>
+    <!-- ngFor is structural directives in angular, here list of users is array so for displaying them in UI we use ngFor -->
+    <li *ngFor="let user of users">
+        {{user.id}}-{{user.userName}}
+    </li>
+
+    <!-- Instead structural directive we can use @for property which is in-built for displaying items in UI
+    -->
+    <!--
+    @for (user of users; track user.id)
+    {
+    <li >
+        {{user.id}}-{{user.userName}}
+    </li>
+    } -->
+
+
+</ul>
